@@ -1,0 +1,11 @@
+{"level":"WARN","time":"2024-05-12T16:53:28.752+0530","callerKey":"controller/UserController.go:34","message":"user alreay exists"}
+{"level":"WARN","time":"2024-05-12T16:59:14.908+0530","callerKey":"controller/UserController.go:34","message":"user alreay exists"}
+{"level":"WARN","time":"2024-05-12T17:00:05.023+0530","callerKey":"controller/UserController.go:34","message":"user alreay exists"}
+{"level":"WARN","time":"2024-05-12T17:00:20.126+0530","callerKey":"controller/UserController.go:34","message":"user alreay exists"}
+{"level":"WARN","time":"2024-05-12T17:01:00.377+0530","callerKey":"controller/UserController.go:34","message":"user alreay exists"}
+{"level":"WARN","time":"2024-05-12T17:01:25.746+0530","callerKey":"controller/UserController.go:34","message":"user alreay exists"}
+{"level":"WARN","time":"2024-05-12T17:01:33.703+0530","callerKey":"controller/UserController.go:34","message":"user alreay exists"}
+{"level":"WARN","time":"2024-05-12T17:02:32.099+0530","callerKey":"controller/UserController.go:34","message":"user alreay exists"}
+{"level":"WARN","time":"2024-05-12T17:02:54.354+0530","callerKey":"controller/UserController.go:34","message":"user alreay exists"}
+{"level":"WARN","time":"2024-05-12T17:03:02.148+0530","callerKey":"controller/UserController.go:34","message":"user alreay exists"}
+{"level":"WARN","time":"2024-05-12T17:03:42.016+0530","callerKey":"controller/UserController.go:34","message":"user alreay exists"}
