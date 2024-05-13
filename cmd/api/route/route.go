@@ -43,6 +43,7 @@ func SetupRouter() *gin.Engine {
 	{
 		var UserController = new(controller.UserController)
 		user.POST("/register", UserController.RegisterUser)
+		user.POST("/login", UserController.Login)
 	}
 
 	return r

@@ -7,3 +7,8 @@ type Register struct {
 	PasswordConfirm string `binding:"required,min=5,max=10,eqfield=Password"`
 	Mobile          string `binding:"required,numeric,len=10"`
 }
+
+type Login struct {
+	Email    string `binding:"required,min=5,max=50,email"`
+	Password string `binding:"required,min=5,max=10"`
+}

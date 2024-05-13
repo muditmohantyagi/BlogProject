@@ -1,5 +1,11 @@
 package model
 
+import (
+	"errors"
+
+	"gorm.io/gorm"
+)
+
 type User struct {
 	ID       uint
 	Name     string `gorm:"type:varchar(250)"`
@@ -21,5 +27,19 @@ func FindUserByEmail(email_id string) (int64, error) {
 		return 0, result.Error
 	}
 	return count, nil
+
+}
+
+func FindUserDataByEmailId(email_id string) (*User, error) {
+	var user *User = new(User)
+
+	if result := db.Where("email=? AND active=?", email_id, 1).Take(&user); result.Error != nil {
+		if errors.Is(result.Error, gorm.ErrRecordNotFound) {
+
+			return nil, nil
+		}
+		return nil, result.Error
+	}
+	return user, nil
 
 }
