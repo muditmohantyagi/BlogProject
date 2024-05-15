@@ -1,7 +1,8 @@
-package router
+package route
 
 import (
 	"blog.com/controller"
+	"blog.com/middleware"
 	"github.com/gin-contrib/cors"
 
 	"github.com/gin-gonic/gin"
@@ -44,6 +45,15 @@ func SetupRouter() *gin.Engine {
 		var UserController = new(controller.UserController)
 		user.POST("/register", UserController.RegisterUser)
 		user.POST("/login", UserController.Login)
+	}
+
+	post := r.Group("api/blog/post")
+
+	post.Use(middleware.AuthorizeJWT())
+	{
+		var PostController = new(controller.PostController)
+		post.POST("/create_post", PostController.CreatePost)
+
 	}
 
 	return r
